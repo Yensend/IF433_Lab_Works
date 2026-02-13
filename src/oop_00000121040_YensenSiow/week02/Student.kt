@@ -1,9 +1,11 @@
 package oop_00000121040_YensenSiow.week02
 
-class Student(
+package oop_00000121040_YensenSiow.week02
+
+class `Student.kt`(
     val name: String,
     val nim: String,
-    val major: String
+    var major: String
 ){
     init{
         if (nim.length != 5){
