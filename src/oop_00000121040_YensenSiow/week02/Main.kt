@@ -16,10 +16,18 @@ fun main(){
         println("error : pendaftaran dibatalkan. nim harus 5 karakter")
 
     }else {
-        print ("masukkan jurusan: ")
+        print ("masukkan jurusan (enter jika belom tau): ")
         val major = scanner.nextLine()
+        val s1 = if (major.isEmpty()){
+            Student(name,nim)
+        }else {
+            print("masukkan ipk awal: ")
+            val gpaInput = scanner.nextDouble()
+            Student(name, nim, major, gpaInput)
+        }
 
-        val s1 = Student(name, nim, major)
-        println("status: pendaftaran selesai.")
+        println("Nama    : ${s1.name}")
+        println("Jurusan : ${s1.major}")
+        println("IPK     : ${s1.gpa}")
     }
 }
