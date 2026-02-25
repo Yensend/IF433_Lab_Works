@@ -1,24 +1,29 @@
 package oop_00000121040_YensenSiow.week03
 
-private var perfomanceRating: Int = 3
+class Employee(val name: String) {
 
-fun increasePerfomance() {
-    perfomanceRating++
-    println("kinerja $name mengingkat! rating: $perfomanceRating")
-}
+    private var perfomanceRating: Int = 3
 
-fun printStatus(){
-    println("Karyawan: $name, rating: $perfomanceRating")
-
-}
-class Employee(val name: String){
     var salary: Int = 0
-        set(value){
-           if(value<0){
-               println("ERROR: gaji tiidak boleh mines, diset ke kosong")
-               field = 0
-           }else{
-               field = value
-           }
+        set(value) {
+            if (value < 0) {
+                println("ERROR: gaji tidak boleh mines, diset ke kosong")
+                field = 0
+            } else {
+                field = value
+            }
         }
+
+    val tax: Double
+        get() = salary * 0.1
+    // ---------------------------------------
+
+    fun increasePerfomance() {
+        perfomanceRating++
+        println("kinerja $name meningkat! rating: $perfomanceRating")
+    }
+
+    fun printStatus() {
+        println("Karyawan: $name, rating: $perfomanceRating, pajak: $tax")
+    }
 }
