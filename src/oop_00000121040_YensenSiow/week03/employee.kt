@@ -7,7 +7,6 @@ class Employee(val name: String) {
     var salary: Int = 0
         set(value) {
             if (value < 0) {
-                println("ERROR: gaji tidak boleh mines, diset ke kosong")
                 field = 0
             } else {
                 field = value
@@ -20,7 +19,6 @@ class Employee(val name: String) {
 
     fun increasePerfomance() {
         perfomanceRating++
-        println("kinerja $name meningkat! rating: $perfomanceRating")
     }
 
     fun printStatus() {
