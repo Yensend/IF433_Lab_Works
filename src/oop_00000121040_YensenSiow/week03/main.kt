@@ -1,8 +1,11 @@
-package oop_00000121040_YensenSiow.week03
+fun main() {
 
-fun main(){
-    val e = Employee("Budi")
-    e.salary = 5000000
-    e.increasePerfomance()
-    e.printStatus()
+    val sword = Weapon("Excalibur")
+
+    sword.damage = -50
+    sword.damage = 9999
+
+    println("Weapon : ${sword.name}")
+    println("Damage : ${sword.damage}")
+    println("Tier   : ${sword.tier}")
 }
