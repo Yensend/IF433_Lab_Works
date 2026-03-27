@@ -30,13 +30,17 @@ package oop_00000121040_YensenSiow.week07
 //    println("Destructured: $userName berumur $userAge")
 //}
 
+//fun main(){
+//    println("\n TEST SEALED CLASS")
+//    val response: ApiResponse = ApiResponse.Success("Data berhasil ditarik")
+//
+//    val uiMessage = when(response){
+//        is ApiResponse.Success -> "Tampilkan: ${response.data}"
+//        is ApiResponse.Error -> "Tampilkan: ${response.error}"
+//        ApiResponse.Loading -> "Tampilkan Spinner"
+//    }
+//}
 fun main(){
-    println("\n TEST SEALED CLASS")
-    val response: ApiResponse = ApiResponse.Success("Data berhasil ditarik")
-
-    val uiMessage = when(response){
-        is ApiResponse.Success -> "Tampilkan: ${response.data}"
-        is ApiResponse.Error -> "Tampilkan: ${response.error}"
-        ApiResponse.Loading -> "Tampilkan Spinner"
-    }
+    GameManager.startGame()
+    GameManager.startGame()
 }
