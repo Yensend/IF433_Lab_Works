@@ -43,4 +43,14 @@ package oop_00000121040_YensenSiow.week07
 fun main(){
     GameManager.startGame()
     GameManager.startGame()
+
+    println("Drop chance LEGENDARY: ${ItemRarity.LEGENDARY.dropChance}%")
+
+    val starterWeapon = Weapon.forgeStarterSword()
+
+    println(
+        "Starter Weapon: ${starterWeapon.item.name} | " +
+                "Damage: ${starterWeapon.item.damage} | " +
+                "Durability: ${starterWeapon.durability}"
+    )
 }
