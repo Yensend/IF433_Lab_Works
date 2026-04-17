@@ -29,9 +29,8 @@ fun main(){
     println("Luas Lingkaran (r 7.0): ${math.hitungLuas(7.0)}")
 
     val wallet = EWallet(50000.0)
-    val card = CreditCard(100000.0)
 
-    val paymentList: List<PaymentMethod> = listOf(wallet, card)
+    val paymentList: List<PaymentMethod> = listOf(wallet)
 
     println("--- SISTEM PEMBAYARAN ---")
     for (payment in paymentList) {

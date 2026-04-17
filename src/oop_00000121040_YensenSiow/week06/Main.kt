@@ -36,5 +36,5 @@ fun main() {
     hub.activateSecurityMode()
 
     println("\n=== Turn Off All Devices ===")
-    hub.turnOffAllSwitches()`x
+    hub.turnOffAllSwitches()
 }
