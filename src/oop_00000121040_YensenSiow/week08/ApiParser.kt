@@ -35,6 +35,6 @@ class ApiParser {
         }
 
         val transactionId = JavaPaymentService.processPayment(id)!!
-        println("Payment Success: $transactionId")
+        println("Payment Success: $transactionId")//cp 18
     }
 }
