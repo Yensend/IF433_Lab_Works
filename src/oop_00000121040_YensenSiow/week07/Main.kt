@@ -71,5 +71,5 @@ fun main(){
     processEvent(
         BattleState.GameOver("Terkena jebakan racun")
     )
-}
+
 }
