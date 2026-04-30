@@ -27,7 +27,7 @@ fun main() {
         .map {
             "LOSS [${it.pair} - ${it.position}]: ${it.roe}% ROE (Lev: ${it.leverage}x)"
         }
-
+    //checkpoint 18
     println("=== CRYPTO TRADING DASHBOARD ===")
 
     topPerformersString.forEach {
