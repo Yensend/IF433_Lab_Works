@@ -10,6 +10,10 @@ fun main() {
         TradeLog("XRPUSDT", "LONG", 5, 8.0, "OPEN"),
         TradeLog("BTCUSDT", "LONG", 10, -2.5, "OPEN")
     )
+
+    val uniquePairs = tradeHistory
+        .map { it.pair }
+        .toSet()
     val closedTrades = tradeHistory.filter { it.status == "CLOSED" }
     val winningTrades = closedTrades.filter { it.roe > 0 }
     val topPerformersString = winningTrades
