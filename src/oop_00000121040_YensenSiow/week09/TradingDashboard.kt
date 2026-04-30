@@ -27,4 +27,18 @@ fun main() {
         .map {
             "LOSS [${it.pair} - ${it.position}]: ${it.roe}% ROE (Lev: ${it.leverage}x)"
         }
+
+    println("=== CRYPTO TRADING DASHBOARD ===")
+
+    topPerformersString.forEach {
+        println(it)
+    }
+
+    println("\n--- LOSSES ---")
+    worstPerformersString.forEach {
+        println(it)
+    }
+
+    println("\n--- UNIQUE PAIRS ---")
+    println(uniquePairs)
 }
