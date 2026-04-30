@@ -33,7 +33,7 @@ fun main() {
     topPerformersString.forEach {
         println(it)
     }
-
+    //checkpoint 19
     println("\n--- LOSSES ---")
     worstPerformersString.forEach {
         println(it)
