@@ -41,4 +41,4 @@ fun main() {
 
     println("\n--- UNIQUE PAIRS ---")
     println(uniquePairs)
-}
+}//checkpoint 20
