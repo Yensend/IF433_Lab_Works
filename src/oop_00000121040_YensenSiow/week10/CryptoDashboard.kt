@@ -12,4 +12,13 @@ fun main() {
         coinRepo.getAll()
     )
 
+    println("=== CRYPTO DASHBOARD ===")
+    println("Status Response: ${response.status}")
+
+    response.data.forEach {
+        println("Coin: ${it.name}")
+        println("Balance: ${it.balance}")
+        println()
+    }
+
 }
